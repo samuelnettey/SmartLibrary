@@ -3,7 +3,7 @@
 namespace SmartLibrary.Domain
 {
 
-    // https://github.com/descco-tools/uml-library-management-system/blob/master/diagrams/class/library-management-system.svg
+
 
     public class Member
     {
@@ -24,3 +24,4 @@ namespace SmartLibrary.Domain
         public MemberIdentity MemberIdentity { get; set; }
     }
 }
+// https://github.com/descco-tools/uml-library-management-system/blob/master/diagrams/class/library-management-system.svg

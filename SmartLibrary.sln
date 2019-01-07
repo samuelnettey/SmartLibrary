@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartLibrary.Data", "src\server\SmartLibrary.Data\SmartLibrary.Data.csproj", "{E166B8BA-1ACA-4018-AEF5-D33C1B8F17B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartLibrary.Data", "src\server\SmartLibrary.Data\SmartLibrary.Data.csproj", "{E166B8BA-1ACA-4018-AEF5-D33C1B8F17B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartLibrary.Domain", "src\server\SmartLibrary.Domain\SmartLibrary.Domain.csproj", "{933742B0-4909-4A9E-A845-E1869B87162F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartLibrary.Domain", "src\server\SmartLibrary.Domain\SmartLibrary.Domain.csproj", "{933742B0-4909-4A9E-A845-E1869B87162F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartLibrary.Application", "src\server\SmartLibrary.Application\SmartLibrary.Application.csproj", "{D07D5A8F-2012-487A-AA0A-B41A4913B6AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartLibrary.Application", "src\server\SmartLibrary.Application\SmartLibrary.Application.csproj", "{D07D5A8F-2012-487A-AA0A-B41A4913B6AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartLibrary.Api", "src\server\SmartLibrary.Api\SmartLibrary.Api.csproj", "{6A42090E-4E6E-49A2-97AF-91F88EBE7402}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartLibrary.Api", "src\server\SmartLibrary.Api\SmartLibrary.Api.csproj", "{6A42090E-4E6E-49A2-97AF-91F88EBE7402}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartLibrary.MVC", "src\server\SmartLibrary.MVC\SmartLibrary.MVC.csproj", "{DB16A29A-D7D7-48E2-B9F3-18EF28263A8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{6A42090E-4E6E-49A2-97AF-91F88EBE7402}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A42090E-4E6E-49A2-97AF-91F88EBE7402}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A42090E-4E6E-49A2-97AF-91F88EBE7402}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB16A29A-D7D7-48E2-B9F3-18EF28263A8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB16A29A-D7D7-48E2-B9F3-18EF28263A8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB16A29A-D7D7-48E2-B9F3-18EF28263A8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB16A29A-D7D7-48E2-B9F3-18EF28263A8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

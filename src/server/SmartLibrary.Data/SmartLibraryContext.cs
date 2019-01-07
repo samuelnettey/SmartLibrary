@@ -3,15 +3,26 @@ using SmartLibrary.Domain;
 
 namespace SmartLibrary.Data
 {
-    public class SmartLibraryContext : DbContext
+    public class SmartLibraryContext : DbContext, ISmartLibraryContext
     {
+        public DbContext Context { get; set; }
+
         public DbSet<Member> Memebers { get; set; }
         public DbSet<Book> Books { get; set; }
         public DbSet<Competition> Competitions { get; set; }
 
 
+
+
+
+
+
+
         public SmartLibraryContext(DbContextOptions<SmartLibraryContext> options)
-            : base(options) { }
+            : base(options)
+        {
+            Context = this;
+        }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

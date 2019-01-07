@@ -1,18 +1,54 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using SmartLibrary.Data;
+using SmartLibrary.Domain;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 
 namespace SmartLibrary.Api.Controllers
 {
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
+        private readonly ISmartLibraryContext _smartLibraryContext;
+
+        public ValuesController(ISmartLibraryContext smartLibraryContext)
+        {
+            _smartLibraryContext = smartLibraryContext;
+        }
+
+
+        //ISmartLibraryContext smartLibraryContext
+
+
+
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()
         {
+
+            _smartLibraryContext.Memebers.Add(new Member {Name = "Malia"});
+               
+                //======== Do not do this.=========
+
+                //new Member
+                //{
+                //    Name = "Sammy",
+                //    Books = new List<Book>
+                //    {
+                //        new Book
+                //        {
+                //            Tilte = "Lost Symbol"
+                //        }
+                //    }
+                //});
+
+
+
+              // First get thr parent object.
+                              // Get the Id 
+                // set the Id on the Child as a Foreing Key.
+            _smartLibraryContext.Context.SaveChanges();
+
+
             return new string[] { "value1", "value2" };
         }
 
