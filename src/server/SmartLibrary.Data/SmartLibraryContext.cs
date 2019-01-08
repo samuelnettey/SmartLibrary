@@ -7,13 +7,16 @@ namespace SmartLibrary.Data
     {
         public DbContext Context { get; set; }
 
-        public DbSet<Member> Memebers { get; set; }
-        public DbSet<Book> Books { get; set; }
-        public DbSet<Competition> Competitions { get; set; }
+        public DbSet<SmartLibrary.Domain.Member> Memebers { get; set; }
+        public DbSet<SmartLibrary.Domain.Book> Books { get; set; }
+        public DbSet<SmartLibrary.Domain.Competition> Competitions { get; set; }
 
 
 
-
+        public SmartLibraryContext()
+        {
+                
+        }
 
 
 
