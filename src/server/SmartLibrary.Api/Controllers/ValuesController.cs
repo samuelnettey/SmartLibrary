@@ -42,10 +42,11 @@ namespace SmartLibrary.Api.Controllers
                 //});
 
 
-
               // First get thr parent object.
                               // Get the Id 
-                // set the Id on the Child as a Foreing Key.
+
+             // set the Id on the Child as a Foreing Key.
+
             _smartLibraryContext.Context.SaveChanges();
 
 

@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartLibrary.Application", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartLibrary.Api", "src\server\SmartLibrary.Api\SmartLibrary.Api.csproj", "{6A42090E-4E6E-49A2-97AF-91F88EBE7402}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartLibrary.MVC", "src\server\SmartLibrary.MVC\SmartLibrary.MVC.csproj", "{DB16A29A-D7D7-48E2-B9F3-18EF28263A8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartLibrary.MVC", "src\server\SmartLibrary.MVC\SmartLibrary.MVC.csproj", "{DB16A29A-D7D7-48E2-B9F3-18EF28263A8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartLibrary.ConsoleApp", "SmartLibrary.Console\SmartLibrary.ConsoleApp.csproj", "{D5EBDECD-9376-4707-AE0F-B68EFD8A831A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{DB16A29A-D7D7-48E2-B9F3-18EF28263A8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB16A29A-D7D7-48E2-B9F3-18EF28263A8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB16A29A-D7D7-48E2-B9F3-18EF28263A8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5EBDECD-9376-4707-AE0F-B68EFD8A831A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5EBDECD-9376-4707-AE0F-B68EFD8A831A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5EBDECD-9376-4707-AE0F-B68EFD8A831A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5EBDECD-9376-4707-AE0F-B68EFD8A831A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
