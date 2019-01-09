@@ -1,4 +1,6 @@
 ﻿using System;
+using SmartLibrary.ConsoleApp.Data;
+using SmartLibrary.ConsoleApp.Domain;
 
 namespace SmartLibrary.ConsoleApp
 {
@@ -6,7 +8,19 @@ namespace SmartLibrary.ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            InsertNewMember();
+            Console.WriteLine("END");
+            Console.ReadKey();
+        }
+
+        private static void InsertNewMember()
+        {
+            using (var ctx = new SmartLibraryConsoleContext())
+            {
+                ctx.Memebers.Add(new Member {Name = "Atta Sammy"});
+                ctx.SaveChanges();
+            }
         }
     }
 }
