@@ -12,11 +12,12 @@ namespace SmartLibrary.ConsoleApp.Data
         public DbSet<Competition> Competitions { get; set; }
 
 
+
    
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=SmartLibraryConsoleDb;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer("Server=localhost,1433\\Catalog=SmartLibrary;Database=SmartLibrary;User=SA;Password=Pa§§w0rd01;");
         }
 
 
