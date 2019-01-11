@@ -1,4 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Data.SqlTypes;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Console;
 using SmartLibrary.ConsoleApp.Domain;
 
 namespace SmartLibrary.ConsoleApp.Data
@@ -12,10 +15,19 @@ namespace SmartLibrary.ConsoleApp.Data
         public DbSet<Competition> Competitions { get; set; }
 
 
+
+        public static readonly LoggerFactory ConsoleLoggerFactory
+            = new LoggerFactory(new[] {
+                new ConsoleLoggerProvider((category, level)
+                => category ==DbLoggerCategory.Database.Command.Name
+                   && level == LogLevel.Information, true)
+
+            });
    
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            optionsBuilder.UseLoggerFactory(ConsoleLoggerFactory);
             optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=SmartLibraryConsoleDb;Trusted_Connection=True;");
         }
 

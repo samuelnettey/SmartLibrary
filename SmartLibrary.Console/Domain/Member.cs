@@ -13,7 +13,7 @@ namespace SmartLibrary.ConsoleApp.Domain
         }
         public int Id { get; set; }
         public string Name { get; set; }
-        public List<Book> Books { get; set; }
+        public List<SmartLibrary.ConsoleApp.Domain.Book> Books { get; set; }
         public List<MemberCompetition> Competitions { get; set; }
         public MemberIdentity MemberIdentity { get; set; }
     }
