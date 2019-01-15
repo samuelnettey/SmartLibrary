@@ -21,11 +21,6 @@ namespace SmartLibrary.ConsoleApp
             Console.ReadKey();
         }
 
-
-
-
-
-
         private static void AddUnrelatedObjects()
         {
             using (var ctx = new SmartLibraryConsoleContext())
